@@ -56,29 +56,40 @@ const questions = [
         message: "What is your LinkedIn Username? ",
     },
     {
-        type: "input",
+        type: "input"
         name: "screenshot",
         message: "Enter screenshot file name:",
         when: (data) => (data.sections.indexOf("screenshots") >= 0)
     },
+    {
+        type: "input",
+        name: "toolList",
+        message: "Enters tools used. Separate them with a comma.",
+        default: "",
+        when: (data) => (data.sections.indexOf("tool list") >= 0)
+    },
     { 
-        type: "List"
-        name: "License"
-        message: ["MIT", "Apache 2.0", "Mozilla", "none"]
+        type: "List",
+        name: "License",
+        message: ["MIT", "Apache 2.0", "Mozilla", "none"],
 
+        when:(data) => (data.sections.indexOf("license") >= 0)
     }
-
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeToFile("README.md" data,err => {
-        
-    
+    fs.writeToFile("README.md", data, err => {
+        err ? console.log(err) : console.log("Created readme successfully");
+    });
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then(answers => {
+        writeToFile("sampleREADME.md", generateMarkdown(answers));
+    });
+}
 
 // Function call to initialize app
 init();
