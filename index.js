@@ -56,7 +56,7 @@ const questions = [
         message: "What is your LinkedIn Username? ",
     },
     {
-        type: "input"
+        type: "input",
         name: "screenshot",
         message: "Enter screenshot file name:",
         when: (data) => (data.sections.indexOf("screenshots") >= 0)
