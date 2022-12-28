@@ -68,11 +68,11 @@ const questions = [
         default: "",
     },
     { 
-        type: "List",
+        type: "list",
         name: "license",
         message: "What license are you using?",
         choices:  ["MIT", "Apache 2.0", "Mozilla", "none"]
-    }
+    },
 ];
 
 // TODO: Create a function to write README file
