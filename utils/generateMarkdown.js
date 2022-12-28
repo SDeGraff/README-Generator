@@ -22,8 +22,8 @@ function renderLicenseBadge(license) {
       licenseLink === "(https://opensource.org/licenses/Apache-2.0)"
     } else if ( license === "Mozilla") {
       licenseLink === "(https://opensource.org/licenses/MPL-2.0)"
-    } else (license === "none") {
-      licenseLink = "";
+    } else (license === "none") ;{
+      licenseLink = ""
     }
     return licenseLink;
    }
@@ -40,32 +40,40 @@ function renderLicenseBadge(license) {
   
   // TODO: Create a function to generate markdown for README
   function generateMarkdown(data) {
-    const readme = 
+    
     return `# ${data.title}
 
   ## ${data.description}
 
   ## Table of Contents
+  - [Description](#description)
   - [Installation](#installation)
-  - [Usage](#usage)
+  - [Screenshot](#screenshot)
   - [License](#license)
-  - [Contributing](#contributing)
-  - [Tests](#tests)
-  -[Questions](#questions)
+  - [Tool List](#toolList)
+  - [Github](#github)
+  - [LinkedIn](#authorLinkedIn)
+  - [Questions](#questions)
+
+  ## Description
+  ${data.description}
 
   ## Installation
   ${data.installation}
 
-  ## Usage
-  ${data.usage}
+  ## Screenshot
+  ${data.screenshot}
 
   ## License
-  ${renderLicenseSection(data.license)}
+  ${data.license}
 
-  ## Contributing
-  ${data.contributing}
+  ## Tool List
+  ${data.toolList}
 
-  
+  ## Questions
+  Github: https://github.com/${data.github}\n
+  LinkedIn: https://linkedin.com/${data.authorLinkedIn}\n
+   
   `;
   }
   
