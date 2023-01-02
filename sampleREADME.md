@@ -1,6 +1,6 @@
 # README.md File Generator
 
-  ## it is a command line app that allows the user to populate a readme.md file with answers to questions in the terminal.
+  
 
   ## Table of Contents
   - [Description](#description)
@@ -16,16 +16,17 @@
   it is a command line app that allows the user to populate a readme.md file with answers to questions in the terminal.
 
   ## Installation
-  run npm i, then run node index.js
+  Install Node.js, Install the Inquirer package
 
   ## Screenshot
-  !(./README.md_Generator)
+  (./README.md_Generator.png)
 
   ## License
-  MIT
+  none
+  
 
   ## Tool List
-  Node.js
+  Inquierer documentation, node.js documentation
 
   ## Questions
   Github: https://github.com/SDeGraff

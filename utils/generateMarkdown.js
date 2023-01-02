@@ -43,7 +43,7 @@ function renderLicenseBadge(license) {
     
     return `# ${data.title}
 
-  ## ${data.description}
+  ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
   - [Description](#description)
@@ -66,6 +66,7 @@ function renderLicenseBadge(license) {
 
   ## License
   ${data.license}
+  ${renderLicenseSection(data.license)}
 
   ## Tool List
   ${data.toolList}
