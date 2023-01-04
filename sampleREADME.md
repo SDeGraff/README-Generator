@@ -13,25 +13,26 @@
   - [Questions](#questions)
 
   ## Description
-  it is a command line app that allows the user to populate a readme.md file with answers to questions in the terminal.
+    it is a command line app that allows the user to populate a readme.md file with answers to questions in the terminal.
 
   ## Installation
-  Install Node.js, Install the Inquirer package
+  install node.js, install inquirer package
 
   ## Screenshot
-  (./README.md_Generator.png)
+![readme generator screenshot](README.md_Generator.png)
+[DEMO!](Readme.md%20Generator%20Demo.webm)
 
   ## License
   none
   
 
   ## Tool List
-  Inquierer documentation, node.js documentation
+  inquirer documentation, Node.js documentation
 
   ## Questions
-  Github: https://github.com/SDeGraff
+  Github: https://github.com/SDeGraf
 
-  LinkedIn: https://linkedin.com/https://www.linkedin.com/in/steven-degraffenreid/
+  LinkedIn: https://linkedin.com/Steven-DeGraffenreid
 
    
   
